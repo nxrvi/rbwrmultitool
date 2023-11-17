@@ -81,6 +81,8 @@
             lb_error.Visible = False
         End If
 
+        tb_feedflow.Text = CalcFlow(y)
+
         supressTB_APRM = False
     End Sub
 
@@ -137,6 +139,8 @@
             tb_aprm.BackColor = Color.Red
         End If
 
+        tb_feedflow.Text = CalcFlow(a)
+
         supressTB_Demand = False
     End Sub
     Function Calc(ByVal a As Integer, ByVal calctype As CalcType)
@@ -146,7 +150,17 @@
             Return Math.Round(y, 1)
         ElseIf calctype = CalcType.MWtoAPRM Then
             y = (a + 163 + 42.7) / 14.3
-            Return Math.Round(y, 1)
+            Return Math.Round(y, 2)
         End If
     End Function
+
+    Function CalcFlow(ByVal therm As Integer)
+        Dim y As Decimal
+
+        y = 82.9 + (13.7 * therm) + (5.87 * ((10 ^ -3) * therm ^ 2))
+
+        Return Math.Round(y, 1)
+
+    End Function
+
 End Class
