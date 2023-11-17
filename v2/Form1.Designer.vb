@@ -27,8 +27,8 @@ Partial Class Form1
         Me.ts_1 = New System.Windows.Forms.ToolStrip()
         Me.tsb_pc = New System.Windows.Forms.ToolStripButton()
         Me.tsb_dta = New System.Windows.Forms.ToolStripButton()
-        Me.PointsCalc1 = New RBWRMultipurposeTool.PointsCalc()
         Me.DemandToAPRM1 = New RBWRMultipurposeTool.DemandToAPRM()
+        Me.PointsCalc1 = New RBWRMultipurposeTool.PointsCalc()
         Me.ts_1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -71,15 +71,6 @@ Partial Class Form1
         Me.tsb_dta.Size = New System.Drawing.Size(125, 23)
         Me.tsb_dta.Text = "Demand To APRM"
         '
-        'PointsCalc1
-        '
-        Me.PointsCalc1.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.PointsCalc1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.PointsCalc1.Location = New System.Drawing.Point(0, 29)
-        Me.PointsCalc1.Name = "PointsCalc1"
-        Me.PointsCalc1.Size = New System.Drawing.Size(570, 244)
-        Me.PointsCalc1.TabIndex = 561
-        '
         'DemandToAPRM1
         '
         Me.DemandToAPRM1.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
@@ -89,6 +80,15 @@ Partial Class Form1
         Me.DemandToAPRM1.Size = New System.Drawing.Size(570, 244)
         Me.DemandToAPRM1.TabIndex = 562
         Me.DemandToAPRM1.Visible = False
+        '
+        'PointsCalc1
+        '
+        Me.PointsCalc1.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.PointsCalc1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.PointsCalc1.Location = New System.Drawing.Point(0, 29)
+        Me.PointsCalc1.Name = "PointsCalc1"
+        Me.PointsCalc1.Size = New System.Drawing.Size(570, 244)
+        Me.PointsCalc1.TabIndex = 561
         '
         'Form1
         '

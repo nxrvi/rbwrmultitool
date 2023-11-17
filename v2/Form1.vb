@@ -10,10 +10,10 @@
         DemandToAPRM1.Visible = False
     End Sub
 
-    Private Sub tsbtnSearch_Paint(sender As Object, e As PaintEventArgs) Handles tsb_pc.Paint
-        Dim btn As ToolStripButton = DirectCast(sender, ToolStripButton)
-        ControlPaint.DrawBorder(e.Graphics, New Rectangle(0, 0, btn.Width, btn.Height), Color.FromArgb(32, 32, 32), ButtonBorderStyle.Solid)
-    End Sub
+    'Private Sub tsbtnSearch_Paint(sender As Object, e As PaintEventArgs) Handles tsb_pc.Paint
+    '   Dim btn As ToolStripButton = DirectCast(sender, ToolStripButton)
+    '   ControlPaint.DrawBorder(e.Graphics, New Rectangle(0, 0, btn.Width, btn.Height), Color.FromArgb(32, 32, 32), ButtonBorderStyle.Solid)
+    'End Sub
 
     Private Sub Form1_Paint(ByVal sender As Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Me.Paint
         Dim g As Graphics = e.Graphics
@@ -36,6 +36,7 @@
         DemandToAPRM1.Visible = True
         PointsCalc1.Visible = False
     End Sub
+
 End Class
 
 Namespace OverrideControls
