@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class DemandToAPRM
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class DemandToAPRM
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lb_title2 = New System.Windows.Forms.Label()
         Me.lb_error = New System.Windows.Forms.Label()
@@ -37,7 +37,7 @@ Partial Class DemandToAPRM
         '
         Me.lb_title2.AutoSize = True
         Me.lb_title2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_title2.Location = New System.Drawing.Point(161, 16)
+        Me.lb_title2.Location = New System.Drawing.Point(163, 6)
         Me.lb_title2.Name = "lb_title2"
         Me.lb_title2.Size = New System.Drawing.Size(239, 22)
         Me.lb_title2.TabIndex = 567
@@ -48,7 +48,7 @@ Partial Class DemandToAPRM
         Me.lb_error.AutoSize = True
         Me.lb_error.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lb_error.ForeColor = System.Drawing.Color.Red
-        Me.lb_error.Location = New System.Drawing.Point(52, 150)
+        Me.lb_error.Location = New System.Drawing.Point(41, 193)
         Me.lb_error.Name = "lb_error"
         Me.lb_error.Size = New System.Drawing.Size(51, 17)
         Me.lb_error.TabIndex = 575
@@ -59,7 +59,7 @@ Partial Class DemandToAPRM
         '
         Me.tb_demand.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.tb_demand.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_demand.Location = New System.Drawing.Point(47, 92)
+        Me.tb_demand.Location = New System.Drawing.Point(226, 73)
         Me.tb_demand.MaxLength = 10
         Me.tb_demand.Name = "tb_demand"
         Me.tb_demand.Size = New System.Drawing.Size(117, 23)
@@ -71,7 +71,7 @@ Partial Class DemandToAPRM
         '
         Me.tb_aprm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.tb_aprm.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_aprm.Location = New System.Drawing.Point(222, 92)
+        Me.tb_aprm.Location = New System.Drawing.Point(44, 73)
         Me.tb_aprm.MaxLength = 10
         Me.tb_aprm.Name = "tb_aprm"
         Me.tb_aprm.Size = New System.Drawing.Size(117, 23)
@@ -83,7 +83,7 @@ Partial Class DemandToAPRM
         '
         Me.tb_feedflow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.tb_feedflow.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_feedflow.Location = New System.Drawing.Point(400, 92)
+        Me.tb_feedflow.Location = New System.Drawing.Point(400, 73)
         Me.tb_feedflow.Name = "tb_feedflow"
         Me.tb_feedflow.ReadOnly = True
         Me.tb_feedflow.Size = New System.Drawing.Size(117, 23)
@@ -95,7 +95,7 @@ Partial Class DemandToAPRM
         '
         Me.lb_feedflow.AutoSize = True
         Me.lb_feedflow.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_feedflow.Location = New System.Drawing.Point(406, 63)
+        Me.lb_feedflow.Location = New System.Drawing.Point(406, 44)
         Me.lb_feedflow.Name = "lb_feedflow"
         Me.lb_feedflow.Size = New System.Drawing.Size(106, 17)
         Me.lb_feedflow.TabIndex = 574
@@ -105,7 +105,7 @@ Partial Class DemandToAPRM
         '
         Me.lb_aprm.AutoSize = True
         Me.lb_aprm.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_aprm.Location = New System.Drawing.Point(240, 63)
+        Me.lb_aprm.Location = New System.Drawing.Point(62, 44)
         Me.lb_aprm.Name = "lb_aprm"
         Me.lb_aprm.Size = New System.Drawing.Size(78, 17)
         Me.lb_aprm.TabIndex = 573
@@ -115,7 +115,7 @@ Partial Class DemandToAPRM
         '
         Me.lb_demand.AutoSize = True
         Me.lb_demand.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_demand.Location = New System.Drawing.Point(52, 63)
+        Me.lb_demand.Location = New System.Drawing.Point(228, 44)
         Me.lb_demand.Name = "lb_demand"
         Me.lb_demand.Size = New System.Drawing.Size(104, 17)
         Me.lb_demand.TabIndex = 572
@@ -124,7 +124,7 @@ Partial Class DemandToAPRM
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(52, 203)
+        Me.Label1.Location = New System.Drawing.Point(41, 222)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(314, 13)
         Me.Label1.TabIndex = 576

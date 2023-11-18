@@ -37,7 +37,7 @@
 
         supressTB_APRM = True
 
-        Dim a As Integer
+        Dim a As Decimal
         Dim invalid As Integer = 0
         Dim y As Decimal
 
@@ -94,7 +94,7 @@
 
         supressTB_Demand = True
 
-        Dim a As Integer
+        Dim a As Decimal
         Dim invalid As Integer = 0
         Dim y As Decimal
 
@@ -143,24 +143,23 @@
 
         supressTB_Demand = False
     End Sub
-    Function Calc(ByVal a As Integer, ByVal calctype As CalcType)
+    Function Calc(ByVal a As Decimal, ByVal calctype As CalcType)
         Dim y As Decimal
         If calctype = CalcType.APRMtoMW Then
             y = 14.3 * a - 163 - 42.7
-            Return Math.Round(y, 1)
+            Return Math.Round(y)
         ElseIf calctype = CalcType.MWtoAPRM Then
             y = (a + 163 + 42.7) / 14.3
             Return Math.Round(y, 2)
         End If
     End Function
 
-    Function CalcFlow(ByVal therm As Integer)
+    Function CalcFlow(ByVal therm As Decimal)
         Dim y As Decimal
 
         y = 82.9 + (13.7 * therm) + (5.87 * ((10 ^ -3) * therm ^ 2))
 
-        Return Math.Round(y, 1)
+        Return Math.Round(y) + 1
 
     End Function
-
 End Class
