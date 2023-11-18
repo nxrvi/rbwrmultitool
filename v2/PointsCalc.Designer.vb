@@ -152,7 +152,7 @@ Partial Class PointsCalc
         '
         Me.lb_title.AutoSize = True
         Me.lb_title.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_title.Location = New System.Drawing.Point(167, 12)
+        Me.lb_title.Location = New System.Drawing.Point(166, 7)
         Me.lb_title.Name = "lb_title"
         Me.lb_title.Size = New System.Drawing.Size(232, 22)
         Me.lb_title.TabIndex = 567
@@ -168,7 +168,7 @@ Partial Class PointsCalc
         Me.lb_u1points.TabIndex = 563
         Me.lb_u1points.Text = "Unit 1 Points"
         '
-        'UserControl1
+        'PointsCalc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -184,7 +184,8 @@ Partial Class PointsCalc
         Me.Controls.Add(Me.lb_u2points)
         Me.Controls.Add(Me.lb_title)
         Me.Controls.Add(Me.lb_u1points)
-        Me.Name = "UserControl1"
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Name = "PointsCalc"
         Me.Size = New System.Drawing.Size(570, 244)
         Me.ResumeLayout(False)
         Me.PerformLayout()
