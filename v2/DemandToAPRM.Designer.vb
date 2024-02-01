@@ -31,6 +31,8 @@ Partial Class DemandToAPRM
         Me.lb_aprm = New System.Windows.Forms.Label()
         Me.lb_demand = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.lb_genload = New System.Windows.Forms.Label()
+        Me.tb_genload = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lb_title2
@@ -130,6 +132,28 @@ Partial Class DemandToAPRM
         Me.Label1.TabIndex = 576
         Me.Label1.Text = "Actual output can be +/- a few MW depending on Reactor Type!"
         '
+        'lb_genload
+        '
+        Me.lb_genload.AutoSize = True
+        Me.lb_genload.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_genload.Location = New System.Drawing.Point(45, 125)
+        Me.lb_genload.Name = "lb_genload"
+        Me.lb_genload.Size = New System.Drawing.Size(114, 17)
+        Me.lb_genload.TabIndex = 573
+        Me.lb_genload.Text = "Gen Load in MW"
+        '
+        'tb_genload
+        '
+        Me.tb_genload.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tb_genload.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_genload.Location = New System.Drawing.Point(44, 154)
+        Me.tb_genload.MaxLength = 10
+        Me.tb_genload.Name = "tb_genload"
+        Me.tb_genload.Size = New System.Drawing.Size(117, 23)
+        Me.tb_genload.TabIndex = 570
+        Me.tb_genload.Text = "0"
+        Me.tb_genload.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
         'DemandToAPRM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -137,9 +161,11 @@ Partial Class DemandToAPRM
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lb_error)
         Me.Controls.Add(Me.tb_demand)
+        Me.Controls.Add(Me.tb_genload)
         Me.Controls.Add(Me.tb_aprm)
         Me.Controls.Add(Me.tb_feedflow)
         Me.Controls.Add(Me.lb_feedflow)
+        Me.Controls.Add(Me.lb_genload)
         Me.Controls.Add(Me.lb_aprm)
         Me.Controls.Add(Me.lb_demand)
         Me.Controls.Add(Me.lb_title2)
@@ -159,4 +185,6 @@ Partial Class DemandToAPRM
     Friend WithEvents lb_aprm As Label
     Friend WithEvents lb_demand As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents lb_genload As Label
+    Friend WithEvents tb_genload As TextBox
 End Class

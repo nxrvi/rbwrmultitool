@@ -1,0 +1,75 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:RBWRMultitool.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="360"
+		Width="600"
+		Height="360"
+        x:Class="RBWRMultitool.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/rbwr-logo.ico"
+        Title="RBWR Multitool"
+		Background="Transparent"
+		TransparencyLevelHint="AcrylicBlur"
+		ExtendClientAreaToDecorationsHint="False"
+		CanResize="False"
+		>
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+	<SplitView
+		IsPaneOpen="{Binding PaneOpen}"
+		OpenPaneLength="180"
+		CompactPaneLength="60"
+		DisplayMode="CompactOverlay"
+		Background="Transparent"
+		PaneBackground="#1e1e1e"
+		>
+		<SplitView.Pane>
+			<StackPanel Spacing="5"
+						Margin="5">
+				<Button Command="{Binding TriggerPane}"
+						HorizontalAlignment="Stretch">
+					<Image Source="/Assets/rbwr-logo.ico" Height="25"/>
+				</Button>
+				<TextBlock VerticalAlignment="Center" Margin="4">RBWR</TextBlock>
+                <ListBox x:Name="ListBox1" SelectionMode="Single" SelectionChanged="ListBox_SelectionChanged">
+					<ListBoxItem Name="pointcalc_rbwr" >Point Calculator</ListBoxItem>
+					<ListBoxItem Name="aprmtomw_rbwr">APRM to MW</ListBoxItem>
+					<ListBoxItem Name="malf_checklist_rbwr">Malfunction Checklist</ListBoxItem>
+				</ListBox>
+					<TextBlock VerticalAlignment="Center" Margin="4">RPWR</TextBlock>
+                <ListBox x:Name="ListBox2" SelectionMode="Single" SelectionChanged="ListBox_SelectionChanged">
+					<ListBoxItem Name="pointcalc_rpwr">Point Calculator</ListBoxItem>
+					<ListBoxItem Name="aprmtomw_rpwr">APRM to MW</ListBoxItem>
+					<ListBoxItem Name="malf_checklist_rpwr">Malfunction Checklist</ListBoxItem>
+				</ListBox>
+				<TextBlock FontSize="8" HorizontalAlignment="Center" VerticalAlignment="Center" IsVisible="{Binding PaneOpen}">
+					Created by nxrvi :> | Icon owned by RBWR</TextBlock>
+			</StackPanel>
+		</SplitView.Pane>
+		<SplitView.Content>
+			<Panel>
+				<ExperimentalAcrylicBorder IsHitTestVisible="False">
+					<ExperimentalAcrylicBorder.Material>
+						<ExperimentalAcrylicMaterial
+							BackgroundSource="Digger"
+							TintColor="Black"
+							TintOpacity="1"
+							MaterialOpacity="0.65">
+						
+						</ExperimentalAcrylicMaterial>
+					</ExperimentalAcrylicBorder.Material>
+				</ExperimentalAcrylicBorder>
+				<TextBlock VerticalAlignment="Center" HorizontalAlignment="Center"
+					>CONTENT</TextBlock>
+			</Panel>
+		</SplitView.Content>
+		
+	</SplitView>
+
+
+</Window>

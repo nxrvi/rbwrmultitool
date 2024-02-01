@@ -16,6 +16,8 @@
         tb_demand.ForeColor = Color.FromArgb(248, 248, 248)
         tb_feedflow.BackColor = Color.FromArgb(75, 75, 75)
         tb_feedflow.ForeColor = Color.FromArgb(248, 248, 248)
+        tb_genload.BackColor = Color.FromArgb(75, 75, 75)
+        tb_genload.ForeColor = Color.FromArgb(248, 248, 248)
     End Sub
 
     Private Sub DemandToAPRM_Paint(ByVal sender As Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Me.Paint
@@ -86,7 +88,7 @@
         supressTB_APRM = False
     End Sub
 
-    Private Sub tb_aprm_TextChanged(sender As Object, e As EventArgs) Handles tb_aprm.TextChanged
+    Private Sub tb_aprm_TextChanged(sender As Object, e As EventArgs) Handles tb_aprm.TextChanged, tb_genload.TextChanged
 
         If supressTB_APRM Then
             Return
